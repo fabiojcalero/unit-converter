@@ -16,6 +16,7 @@ body {
     --light-btn-color: #FFFFFF;
     --card-bg: #FFFFFF;
     --card-title-text-color: #5A537B;
+    --card-description-text-color: #353535;
     --darker-text-color: #3D3D3D;
     --toggle-theme-btn-color: #273549;
 }
@@ -24,6 +25,7 @@ body {
     --secondary-color: #1F2937;
     --card-bg: #273549;
     --card-title-text-color: #CCC1FF;
+    --card-description-text-color: #FFFFFF;
 }
 
 #container {
@@ -101,6 +103,7 @@ body {
 }
 
 .card-desc {
+    color: var(--card-description-text-color);
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 20px;
