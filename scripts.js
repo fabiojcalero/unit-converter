@@ -3,6 +3,10 @@ const lengthResultEl = document.getElementById("length-result")
 const volumeResultEl = document.getElementById("volume-result")
 const massResultEl = document.getElementById("mass-result")
 const unitInputEl = document.getElementById("unit-input")
+const toggleThemeBtn = document.getElementById("theme-toggle-btn")
+const rootEl = document.documentElement;
+const sunIconEl = document.getElementById("sun-icon")
+const moonIconEl = document.getElementById("moon-icon")
 
 // Unit conversion factors
 const METER_TO_FOOT = 3.28084;
@@ -14,6 +18,10 @@ convertBtn.addEventListener("click", function() {
     displayVolume()
     displayMass()
 })
+
+toggleThemeBtn.addEventListener("click", function() {
+    toggleTheme()
+});
 
 function displayLength() {
     let measurementUnit = unitInputEl.value
@@ -45,4 +53,16 @@ function convertUnit(num, factor) {
 
 function renderText(text, element) {
     element.textContent = text;
+}
+
+function toggleTheme() {
+    if (rootEl.getAttribute("data-theme") === "dark") {
+        rootEl.setAttribute("data-theme", "light");
+        sunIconEl.setAttribute("display", "none");
+        moonIconEl.setAttribute("display", "inline");
+    } else {
+        rootEl.setAttribute("data-theme", "dark");
+        sunIconEl.setAttribute("display", "inline");
+        moonIconEl.setAttribute("display", "none");
+    }
 }
