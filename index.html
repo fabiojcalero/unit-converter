@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metric to Imperial Unit Converter</title>
+    <meta name="keywords"
+        content="unit converter, unit conversion, metric system, metric units, imperial system, imperial units, meters to feet, liters to gallons, kilograms to pounds, feet to meters, gallons to liters, pounds to kilograms, lb to kg, kg to lb">
+    <meta name="description" content="A handy unit converter. Convert from metric to imperial units in seconds!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main id="container">
+        <div id="converter">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="text" id="unit-input"></input>
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div id="card-container">
+            <div class="card">
+                <h2 class="card-title">Length (Meter/Feet)</h2>
+                <p class="card-desc" id="length-result"></p>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Volume (Liters/Gallons)</h2>
+                <p class="card-desc" id="volume-result"></p>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Mass (Kilograms/Pounds)</h2>
+                <p class="card-desc" id="mass-result"></p>
+            </div>
+        </div>
+        <script src="/scripts.js"></script>
+
+    </main>
+</body>
+
+</html>
